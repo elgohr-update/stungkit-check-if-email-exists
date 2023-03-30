@@ -16,7 +16,7 @@ jobs:
       - name: Print version
         run: echo "Publishing reacherhq/backend:${{ steps.vars.outputs.GITHUB_TAG }}"
       - name: Publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: reacherhq/backend
           username: ${{ secrets.DOCKER_USERNAME }}
